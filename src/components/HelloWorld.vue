@@ -2,13 +2,13 @@
   <div class="brand-logo">
     <img class="dolan-img" alt="DolanLabs logo" src="../../src/assets/dolanwithtext-logo.png">
   </div>
-  <!-- <div class="navbar">
-    <ul id="horizontal-list">
-      <li><p class="navbar-text">Team</p></li>
-      <li><p class="navbar-text">Kegiatan</p></li>
-      <li><p class="navbar-text">Kontak</p></li>
+  <nav class="navbar">
+    <ul id="menu-list">
+      <li>Team</li>
+      <li>Kegiatan</li>
+      <li>Kontak</li>
     </ul>
-  </div> -->
+  </nav>
   <div class="content">
     <h1 class="hero">DolanLabs Community</h1>
     <p class="description">
@@ -41,42 +41,28 @@ export default {
   top: 40px;
 }
 .navbar {
-  position: absolute;
-  display: table;
-  margin: 0 auto;
+  position: sticky;
   width: 563px;
   height: 48px;
   left: 675px;
   top: 40px;
 }
-#horizontal-list {
-  min-width: 696px;
-  list-style: none;
-  padding-top: 20px;
-}
-#horizontal-list li {
+ul#menu-list li {
   display: inline;
-}
-.navbar-text {
-  /* position: static;
+  list-style-type: none;
   width: 47px;
   height: 24px;
   left: 0px;
-  top: 0px; */
+  top: 0px;
   font-family: Poppins, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: #F8F9FF;
-  /* flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 44px; */
+  margin: 0px 30px;
+  text-decoration: none;
 }
-/* .content {
-  font-family: "Playfair Display", Helvetica, Arial, sans-serif;
-} */
 .hero {
   position: absolute;
   width: 491px;
